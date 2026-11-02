@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Programs & Events | The Community Book Nook</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore weekly story times, monthly book clubs, and creative workshops at The Community Book Nook. Find events for all ages in Cape Town.">
+    <meta name="keywords" content="community library events, kids story time, adult book club, teen writing workshop, Cape Town library">
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet Map CSS (if needed later) -->
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container nav-container">
+        <div class="logo">The Community <span>Book Nook</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html" class="active">Programs & Events</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- PROGRAMS CONTENT -->
+<section>
+    <div class="container">
+        <h2 class="section-title">Programs & Events</h2>
+        <p style="text-align:center; max-width:650px; margin:0 auto 2rem;">
+            From story time for little ones to book clubs for adults — there's always something happening at the Book Nook.
+        </p>
+
+        <!-- Dynamic Search & Filter -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search programs (e.g., 'kids', 'book')..." aria-label="Search programs">
+            <select id="filterSelect" aria-label="Filter by frequency">
+                <option value="all">All Frequencies</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="new">New</option>
+                <option value="family">Family</option>
+                <option value="annual">Annual</option>
+            </select>
+        </div>
+
+        <!-- Program 1 -->
+        <div class="program-card">
+            <div class="icon">📖</div>
+            <div class="info">
+                <h3>Story Time for Kids <span class="badge">Weekly</span></h3>
+                <div class="date">📅 Every Wednesday • 10:30 – 11:30</div>
+                <p>Join us for interactive storytelling sessions designed for children aged 3–7. Each week features a new book, songs, and craft activities. A great way to spark a love for reading!</p>
+                <button class="btn btn-secondary open-modal" style="padding:10px 28px; font-size:0.9rem;">Register Now</button>
+            </div>
+        </div>
+
+        <!-- Program 2 -->
+        <div class="program-card">
+            <div class="icon">📚</div>
+            <div class="info">
+                <h3>Adult Book Club <span class="badge">Monthly</span></h3>
+                <div class="date">📅 First Thursday of each month • 18:30 – 20:00</div>
+                <p>This month we're reading <em>"The Promise"</em> by Damon Galgut. Join us for a lively discussion, tea, and good company. New members always welcome!</p>
+                <button class="btn btn-secondary open-modal" style="padding:10px 28px; font-size:0.9rem;">Register Now</button>
+            </div>
+        </div>
+
+        <!-- Program 3 -->
+        <div class="program-card">
+            <div class="icon">✍️</div>
+            <div class="info">
+                <h3>Teen Writers' Workshop <span class="badge">New</span></h3>
+                <div class="date">📅 Saturday, 12 September 2026 • 14:00 – 16:00</div>
+                <p>Calling all young writers aged 13–18! Join us for a creative writing workshop led by local author Zanele Mthembu. Learn storytelling techniques and share your work in a supportive environment.</p>
+                <button class="btn btn-secondary open-modal" style="padding:10px 28px; font-size:0.9rem;">Register Now</button>
+            </div>
+        </div>
+
+        <!-- Program 4 -->
+        <div class="program-card">
+            <div class="icon">🎨</div>
+            <div class="info">
+                <h3>Book Art & Craft Day <span class="badge">Family</span></h3>
+                <div class="date">📅 Saturday, 19 September 2026 • 11:00 – 14:00</div>
+                <p>A fun-filled day for the whole family! Create bookmarks, decorate book covers, and make your own mini storybook. All materials provided. Perfect for children and adults alike.</p>
+                <button class="btn btn-secondary open-modal" style="padding:10px 28px; font-size:0.9rem;">Register Now</button>
+            </div>
+        </div>
+
+        <!-- Program 5 -->
+        <div class="program-card">
+            <div class="icon">🌍</div>
+            <div class="info">
+                <h3>Community Reading Challenge <span class="badge">Annual</span></h3>
+                <div class="date">📅 Starts 1 October 2026 • All month</div>
+                <p>Join our annual reading challenge! Read 5 books in October and share your reviews. Prizes for the most creative reviews and most books read. Let's read together!</p>
+                <button class="btn btn-secondary open-modal" style="padding:10px 28px; font-size:0.9rem;">Register Now</button>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div style="text-align:center; margin-top:40px; padding:30px 20px; background:#fff; border-radius:24px; border:1px solid #d4c5b0;">
+            <h3 style="margin-bottom:8px;">Have an idea for a program?</h3>
+            <p style="max-width:500px; margin:0 auto 18px;">We're always looking for new ways to serve our community. Share your ideas with us!</p>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- MODAL -->
+<div id="registrationModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2 style="margin-bottom: 15px;">Register for an Event</h2>
+        <p style="margin-bottom: 20px;">Please fill out the form below to secure your spot. We will email you the details!</p>
+        <form class="ajax-form">
+            <div class="form-group">
+                <label for="regName">Full Name *</label>
+                <input type="text" id="regName" required placeholder="Your name">
+                <span class="error-message">This field is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="regEmail">Email Address *</label>
+                <input type="email" id="regEmail" required placeholder="your@email.com">
+                <span class="error-message">This field is required.</span>
+            </div>
+            <button type="submit" class="btn" style="width: 100%;">Submit Registration</button>
+        </form>
+        <div class="success-message">✅ Successfully registered! Check your email for details.</div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <span>&copy; 2026 The Community Book Nook. All rights reserved.</span>
+        <span>📚 Reading changes lives.</span>
+    </div>
+</footer>
+
+<!-- Link to external JS -->
+<script src="script.js"></script>
+</body>
+</html>

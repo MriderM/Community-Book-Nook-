@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Get Involved | The Community Book Nook</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Support The Community Book Nook. Find out how to volunteer, sponsor, donate books, or host a workshop to help our community thrive.">
+    <meta name="keywords" content="volunteer library, donate books, sponsor community, library workshop, help community book nook">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container nav-container">
+        <div class="logo">The Community <span>Book Nook</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs & Events</a></li>
+            <li><a href="get-involved.html" class="active">Get Involved</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- GET INVOLVED CONTENT -->
+<section>
+    <div class="container">
+        <h2 class="section-title">Get Involved</h2>
+        <p style="text-align:center; max-width:650px; margin:0 auto 2.5rem;">
+            The Community Book Nook thrives because of people like you. Here’s how you can help support our mission.
+        </p>
+
+        <!-- Ways to Help Grid -->
+        <div class="feature-grid" style="margin-bottom: 60px;">
+            <div class="feature-card" style="padding: 25px;">
+                <div class="icon">🤝</div>
+                <h3>Volunteer</h3>
+                <p>Help with story time, shelving, events, or administrative tasks. Every hour helps!</p>
+            </div>
+            <div class="feature-card" style="padding: 25px;">
+                <div class="icon">🏢</div>
+                <h3>Become a Sponsor</h3>
+                <p>Support our programs and help us buy new books and supplies for the community.</p>
+            </div>
+            <div class="feature-card" style="padding: 25px;">
+                <div class="icon">📚</div>
+                <h3>Donate Books</h3>
+                <p>Gently used books are always welcome. Help us keep our shelves full and diverse.</p>
+            </div>
+            <div class="feature-card" style="padding: 25px;">
+                <div class="icon">🎤</div>
+                <h3>Host a Workshop</h3>
+                <p>Share your skills! We are always looking for local experts to host writing or art workshops.</p>
+            </div>
+        </div>
+
+        <!-- Enquiry Form -->
+        <div style="max-width: 700px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 20px; border: 1px solid #d4c5b0; box-shadow: 0 4px 16px rgba(0,0,0,0.05);">
+            <h3 style="margin-bottom: 20px; text-align: center;">Send Us an Enquiry</h3>
+            
+            <div class="success-message">✅ Thank you for your enquiry! We will contact you shortly with more information.</div>
+            
+            <!-- The class "ajax-form" triggers the validation and submission logic in script.js -->
+            <form class="ajax-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" required placeholder="Your full name">
+                    <span class="error-message">This field is required.</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" required placeholder="your@email.com">
+                    <span class="error-message">This field is required.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="e.g. 082 123 4567">
+                </div>
+                
+                <div class="form-group">
+                    <label for="interest">I am interested in: *</label>
+                    <select id="interest" required>
+                        <option value="">-- Please select an option --</option>
+                        <option value="volunteer">Volunteering</option>
+                        <option value="sponsor">Becoming a Sponsor</option>
+                        <option value="donate">Donating Books</option>
+                        <option value="host">Hosting a Workshop</option>
+                    </select>
+                    <span class="error-message">Please select an option.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" rows="4" required placeholder="Tell us how you would like to get involved..."></textarea>
+                    <span class="error-message">This field is required.</span>
+                </div>
+                
+                <button type="submit" class="btn" style="width: 100%;">Send Enquiry</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <span>&copy; 2026 The Community Book Nook. All rights reserved.</span>
+        <span>📚 Reading changes lives.</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
